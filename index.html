@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Timetable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>College Timetable</h1>
+    <div id="dateTime"></div>
+</header>
+
+<div class="container">
+    <div class="card">
+
+        <!-- BUTTONS -->
+        <div class="day-controls">
+            <button onclick="changeDay(-1)">⬅ Previous Day</button>
+            <button onclick="changeDay(1)">Next Day ➡</button>
+        </div>
+
+        <h2 id="todayHeading"></h2>
+
+        <table id="verticalTable">
+            <tr>
+                <th>Time</th>
+                <th>Subject</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer>
+    © 2026 College Portal
+</footer>
+
+<script src="script.js"></script>
